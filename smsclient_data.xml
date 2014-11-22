@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data >
+    
+       <record id="sms_parms1" model="sms.smsclient">
+            <field name="name">eee1</field>
+            <field name="method">http</field>
+             <field name="url">http://sms.1xinxi.cn/asmx/smsservice.aspx</field>
+   
+        </record>
+        
+        <record id="sms_parms2" model="sms.smsclient.parms">
+            <field name="type">name</field>
+            <field name="name">name</field>
+            <field name="value">13556066843</field>
+            <field name="gateway_id" ref="sms_parms1"/>
+            
+        </record>
+        
+   <record id="sms_parms3" model="sms.smsclient.parms">
+            <field name="type">pwd</field>
+            <field name="name">pwd</field>
+            <field name="value">81CDCDF56751269185433CFDAC30</field>
+            <field name="gateway_id" ref="sms_parms1"/>
+            
+        </record>
+        
+    <record id="sms_parms4" model="sms.smsclient.parms">
+            <field name="type">sign</field>
+            <field name="name">sign</field>
+            <field name="value">L21</field>
+            <field name="gateway_id" ref="sms_parms1"/>
+            
+        </record>
+   <record id="sms_parms5" model="sms.smsclient.parms">
+            <field name="type">type</field>
+            <field name="name">type</field>
+            <field name="value">pt</field>
+            <field name="gateway_id" ref="sms_parms1"/>
+            
+        </record>
+   <record id="sms_parms6" model="sms.smsclient.parms">
+            <field name="type">extno</field>
+            <field name="name">extno</field>
+            <field name="value">123</field>
+            <field name="gateway_id" ref="sms_parms1"/>
+            
+        </record>
+        
+    <record id="sms_parms7" model="sms.smsclient.parms">
+            <field name="type">mobile</field>
+            <field name="name">mobile</field>
+            <field name="value"></field>
+            <field name="gateway_id" ref="sms_parms1"/>
+            
+        </record>
+        
+   <record id="sms_parms8" model="sms.smsclient.parms">
+            <field name="type">content</field>
+            <field name="name">content</field>
+            <field name="value"></field>
+            <field name="gateway_id" ref="sms_parms1"/>
+            
+        </record>
+
+
+    </data>
+</openerp>
